@@ -10,6 +10,14 @@
 	padding: 5px;
 }
 
+.job:hover {
+	background-color: blue;
+}
+
 .accomplishments {
 	font-size: 0.8em;
+}
+
+#volunteer-experience .volunteer-gig .accomplishments {
+	color: red;
 }
