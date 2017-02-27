@@ -4,7 +4,7 @@
 
 * What is version control?  Why is it useful?
 
-Version control is a tool that allows you to track progress, review and revert changes, and create backups in your code. It allows people to view the whole history of revisions to at least one file in the repository. It also allows you to merge any revisions made by you or others.
+Version control is a tool that allows you to track progress, review and revert changes, and create backups in your code. It allows people to view the whole revision history to more than one file in the repository. It also allows you to merge any revisions made by you or others.
 
 
 * What is a branch and why would you use one?
