@@ -1,3 +1,7 @@
+body {
+  width: 960px;
+}
+
 blockquote {
   border-left: 5px solid blue;
   padding: 15px;
@@ -5,13 +9,33 @@ blockquote {
 }
 
 cite {
-  display: block;
+  display: inline-block;
   margin-top: 10px;
+}
+
+#external-links {
+  display: block;
+  width: 200px;
+  vertical-align: 0px;
+  position: relative;
 }
 
 #external-links ul {
   list-style-type: none;
   padding-left: 0px;
+}
+
+main {
+  display: inline-block;
+  width: 756px;
+  position: absolute;
+  left: 220px;
+  top: 0px;
+  vertical-align: 0px;
+}
+
+h1.wildflowers {
+  margin-top: 5px;
 }
 
 /* you're welcome to edit the
