@@ -61,3 +61,30 @@ figcaption {
   font-style: italic;
   text-align: right;
 }
+
+@media screen and (max-width: 1090px) {
+  figcaption, h1, .text-area {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  figcaption {
+    font-size: 0.75em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #external-links, main {
+    width: 100%;
+    position: static;
+  }
+}
+
+/*@media screen and (max-width: 500px) {
+  body {
+    background-color: hotpink;
+  }
+}*/
