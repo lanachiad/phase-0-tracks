@@ -1,4 +1,41 @@
-/*Test CSS*/
-body {
-	background-color: blue;
+body{
+  font-family: 'Slabo 27px', serif;
+  margin: 0px;
+}
+
+section{
+  width: 49.3%;
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+h1 {
+  margin: 0px;
+}
+
+header{
+  text-align:center;
+  background-color: #add8e6;
+  padding-bottom:8px;
+  border-bottom: 1px solid black;
+}
+
+footer{
+  margin-top: 6px;  
+  text-align:center;
+  font-weight: 700;
+  clear: both;
+}
+
+.column-1 {
+  background-color: #d966ff;
+}
+
+.column-1, .column-2 {
+  padding: 5px;
+}
+
+.column-2 {
+  background-color: #ff4d4d;
+  margin-left: -3px;
 }
