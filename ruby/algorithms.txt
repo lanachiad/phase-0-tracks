@@ -1,15 +1,32 @@
 4.2 Algorithms
 
-Release 0:
+Release 0: Robots and Elevators
 
-When robot approaches elevator, check if doors are open.
-	If open, enter the elevator.
-	If closed, wait until the doors are open.
+When robot approaches elevator, check if doors are open:
+	- If open, enter the elevator.
+	- If closed, wait until the doors are open.
 
-When robot is inside elevator, select floor number you want to go to.
-	If robot wants to go to the ground floor, select the G button.
-	If robot wants to go to a numbered floor, select the button with the same number.
+When robot is inside elevator, select floor number you want to go to:
+	- If robot wants to go to the ground floor, select the G button, or the button with a star next to it.
+	- If robot wants to go to a numbered floor, select the button with the same number.
 
-When doors open, check if robot is on the correct floor.
-	If yes, exit elevator.
-	If no, wait until elevator doors open on the correct floor.
+When doors open, check if robot is on the correct floor:
+	- If yes, exit elevator.
+	- If no, wait until elevator doors open on the correct floor.
+
+
+
+Release 1: Does Dog Need To Go Out?
+
+Check if dog is awake:
+	- If dog is sleeping, go back to whatever I was doing.
+	- If dog is awake, put down whatever I'm doing.
+
+Check on dog's activity:
+	- If dog is playing with his toys, go back to whatever I was doing or play with him.
+	- If dog is pacing the apartment, stand up and call dog's name.
+
+Ask dog if he needs to go out:
+	- If dog starts nipping at your feet, he's probably just bored and wants to play with you.
+	- If dog runs to the apartment door and looks back to you, he needs to go out.
+
