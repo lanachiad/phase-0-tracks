@@ -24,3 +24,5 @@ age.to_i
 if age.empty?
 	age = nil
 end
+
+puts "Hamster name: #{hamster_name}\n Volume level: #{volume} \n Fur color: #{fur}\n Good candidate: #{candidate}\n Estimated age: #{age}" 
