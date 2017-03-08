@@ -34,7 +34,6 @@ end
 
 # Validating age and year provided
 
-
 given_year = Time.new.year
 check_year = given_year.to_i - year.to_i
 if check_year == age.to_i
