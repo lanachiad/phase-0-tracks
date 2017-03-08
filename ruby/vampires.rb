@@ -6,12 +6,10 @@ employee_name = gets.chomp
 
 puts "How old are you?"
 age = gets.chomp
-age.to_i
 
 
 puts "What year were you born?"
 year = gets.chomp
-year.to_i 
 
 
 puts "Want us to order you some garlic bread? (y/n)"
@@ -34,3 +32,13 @@ elsif health_insurance == "N" || health_insurance == "n"
 end
 
 
+# Validating age and year provided
+
+
+given_year = Time.new.year
+check_year = given_year.to_i - year.to_i
+if check_year == age.to_i
+	correct_age = true
+else
+	correct_age = false
+end
