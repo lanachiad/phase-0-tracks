@@ -1,3 +1,5 @@
+# Variable declarations and converting to integers and booleans
+
 puts "What is your name?"
 employee_name = gets.chomp 
 
@@ -30,4 +32,5 @@ if health_insurance == "Y" || health_insurance == "y"
 elsif health_insurance == "N" || health_insurance == "n"
 	health_insurance = false
 end
+
 
