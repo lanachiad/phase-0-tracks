@@ -18,14 +18,15 @@ while current_employee < number_employees
 	else
 		employee_name = false
 	end
-			
 
 	puts "How old are you?"
 	age = gets.chomp
+	age = age.to_i
 
 
 	puts "What year were you born?"
 	year = gets.chomp
+	year = year.to_i
 
 
 	puts "Want us to order you some garlic bread? (y/n)"
@@ -51,8 +52,9 @@ while current_employee < number_employees
 	# Validating age and year provided
 
 	given_year = Time.new.year
-	check_year = given_year.to_i - year.to_i
-	if check_year == age.to_i
+	given_year = given_year.to_i
+	check_year = given_year - year
+	if check_year == age
 		correct_age = true
 	else
 		correct_age = false
