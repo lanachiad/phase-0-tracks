@@ -48,6 +48,19 @@ while current_employee < number_employees
 		health_insurance = false
 	end
 
+	# Check for allergies
+
+	puts "Do you have any allergies? Submit answer after each one. Type 'done' when finished"
+	allergies = gets.chomp
+	if allergies == "sunshine"
+		puts "Probably a vampire"
+	else
+		until allergies == "done"
+			puts "Do you have any allergies? Submit answer after each one. Type 'done' when finished"
+			allergies = gets.chomp
+		end
+	end
+
 
 	# Validating age and year provided
 
