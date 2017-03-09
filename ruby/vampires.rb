@@ -3,6 +3,14 @@
 puts "What is your name?"
 employee_name = gets.chomp 
 
+if employee_name == "Tu Fang"
+	employee_name = true
+elsif employee_name == "Drake Cula"
+	employee_name = true
+else
+	employee_name = false
+end
+		
 
 puts "How old are you?"
 age = gets.chomp
@@ -40,4 +48,19 @@ if check_year == age.to_i
 	correct_age = true
 else
 	correct_age = false
+end
+
+
+# Comparing answers to see if werewolf or vampire
+
+if employee_name && correct_age && (garlic_bread || health_insurance) == true
+	puts "Definitely a vampire"
+elsif correct_age == false && (garlic_bread || health_insurance) == true 
+	puts "Probably a vampire"
+elsif correct_age == false && (garlic_bread && health_insurance) == false
+	puts "Almost certainly a vampire"
+elsif employee_name == false && (correct_age && (garlic_bread || health_insurance)) == true
+	puts "Probably not a vampire"
+else
+	puts "Results inconclusive"
 end
