@@ -92,3 +92,5 @@ while current_employee < number_employees
 
 	current_employee += 1
 end
+
+puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends!"
