@@ -63,3 +63,16 @@ end
 # Ask user if they want to decrypt or encrypt
 # After they answer, ask the user for the password they want to use
 # Based on their choice, it will trigger the decrypt or encrypt method
+
+puts "Would you like to decrypt or encrypt your password?"
+answer = gets.chomp
+if answer == "decrypt"
+	puts "What is your encrypted password?"
+	input = gets.chomp
+	decrypt(input)
+elsif answer == "encrypt"
+	puts "What is your password?"
+	input = gets.chomp
+	encrypt(input)
+end
+		
