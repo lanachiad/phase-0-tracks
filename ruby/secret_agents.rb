@@ -30,3 +30,14 @@ def encrypt(pass)
 		index += 1
 	end
 end
+
+def decrypt(pass)
+	index = 0
+	alphabet = "abcdefghijklmnopqrstuvwxyz"
+	while index < pass.length
+		letter = pass[index]
+		number = alphabet.index(letter)
+		p alphabet[number - 1]
+		index += 1
+	end
+end
