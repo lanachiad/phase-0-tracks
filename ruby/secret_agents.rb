@@ -1,4 +1,5 @@
 =begin
+
 Encrypt:
 Ask user for password
 Store password as variable
@@ -15,3 +16,17 @@ Change each letter to next one
 
 =end
 
+def encrypt(pass)
+	index = 0
+	alphabet = "abcdefghijklmnopqrstuvwxyz"
+	while index < pass.length
+		letter = pass[index]
+		number = alphabet.index(letter)
+		if pass[index] == "z"
+			p "a"
+		else
+			p alphabet[number + 1]
+		end
+		index += 1
+	end
+end
