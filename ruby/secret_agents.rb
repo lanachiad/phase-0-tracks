@@ -42,6 +42,8 @@ def decrypt(pass)
 	end
 end
 
+
+
 # decrypt(encrypt("swordfish"))
 # "t"
 # "x"
@@ -55,3 +57,9 @@ end
 # secret_agents.rb:37:in `decrypt': undefined method `length' for nil:NilClass (NoMethodError)
 # 	from secret_agents.rb:45:in `<main>'
 # We got this error with the thought being that the program can't encrypt and decrypt on same line.
+
+
+
+# Ask user if they want to decrypt or encrypt
+# After they answer, ask the user for the password they want to use
+# Based on their choice, it will trigger the decrypt or encrypt method
