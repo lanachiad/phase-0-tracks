@@ -41,3 +41,17 @@ def decrypt(pass)
 		index += 1
 	end
 end
+
+# decrypt(encrypt("swordfish"))
+# "t"
+# "x"
+# "p"
+# "s"
+# "e"
+# "g"
+# "j"
+# "t"
+# "i"
+# secret_agents.rb:37:in `decrypt': undefined method `length' for nil:NilClass (NoMethodError)
+# 	from secret_agents.rb:45:in `<main>'
+# We got this error with the thought being that the program can't encrypt and decrypt on same line.
