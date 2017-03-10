@@ -54,6 +54,8 @@ while current_employee < number_employees
 	allergies = gets.chomp
 	if allergies == "sunshine"
 		puts "Probably a vampire"
+		current_employee += 1
+		next
 	else
 		until allergies == "done"
 			puts "Do you have any allergies? Submit answer after each one. Type 'done' when finished"
