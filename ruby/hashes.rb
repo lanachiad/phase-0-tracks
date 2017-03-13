@@ -51,7 +51,7 @@ client_info[:redesign] = redesign_rooms
 
 p client_info
 
-puts "Oh man, you totally forget that you ran out of #{decor.downcase} themed decor. What's another preferred decor theme your client prefers? Enter 'none' if their only like #{decor.downcase}-related themes."
+puts "Oh man, you totally forgot that you ran out of #{decor.downcase}-themed decor last week. What's another preferred decor theme your client prefers? Enter 'none' if their only like #{decor.downcase}-related themes."
 new_decor = gets.chomp
 
 if new_decor == "none"
