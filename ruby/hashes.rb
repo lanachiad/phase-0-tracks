@@ -51,7 +51,7 @@ client_info[:redesign] = redesign_rooms
 
 p client_info
 
-puts "Oh man, the interior designer has run out of #{decor} themed decor. What's another preferred decor theme you prefer?"
+puts "Oh man, the interior designer has run out of #{decor.downcase} themed decor. What's another preferred decor theme you prefer?"
 decor = gets.chomp
 client_info[:decor] = decor
 
