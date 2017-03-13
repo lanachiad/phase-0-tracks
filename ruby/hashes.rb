@@ -9,23 +9,23 @@ client_info = {
 
 }
 
-puts "Hey new client! What's your name?"
+puts "What's your client's name?"
 client_name = gets.chomp
 client_info[:name] = client_name
 
-puts "How old are you?"
+puts "How old is your client?"
 age = gets.chomp.to_i
 client_info[:age] = age
 
-puts "How many children do you have?"
+puts "How many children does your client have?"
 children = gets.chomp.to_i
 client_info[:children] = children
 
-puts "What's your preferred decor theme for your redesign?"
+puts "What's your client's preferred decor theme for their redesign?"
 decor = gets.chomp
 client_info[:decor] = decor
 
-puts "Do you like contemporary furniture? (y/n)"
+puts "Does your client like contemporary furniture? (y/n)"
 contemporary = gets.chomp
 
 if contemporary == "y" || contemporary == "Y"
@@ -35,7 +35,7 @@ elsif contemporary == "n" || contemporary == "N"
 end
 client_info[:contemporary] = contemporary
 
-puts "Do you like classical furniture? (y/n)"
+puts "Does your client like classical furniture? (y/n)"
 classical = gets.chomp
 
 if classical == "y" || classical == "Y"
@@ -51,7 +51,7 @@ client_info[:redesign] = redesign_rooms
 
 p client_info
 
-puts "Oh man, the interior designer has run out of #{decor.downcase} themed decor. What's another preferred decor theme you prefer? Enter 'none' if you only prefer #{decor.downcase} themes."
+puts "Oh man, you totally forget that you ran out of #{decor.downcase} themed decor. What's another preferred decor theme your client prefers? Enter 'none' if their only like #{decor.downcase}-related themes."
 new_decor = gets.chomp
 
 if new_decor == "none"
