@@ -9,23 +9,23 @@ client_info = {
 
 }
 
-puts "Enter client's name:"
+puts "Hey new client! What's your name?"
 client_name = gets.chomp
 client_info[:name] = client_name
 
-puts "Enter client age:"
+puts "How old are you?"
 age = gets.chomp.to_i
 client_info[:age] = age
 
-puts "Enter number of children client has:"
+puts "How many children do you have?"
 children = gets.chomp.to_i
 client_info[:children] = children
 
-puts "Enter preferred decor theme:"
+puts "What's your preferred decor theme for your redesign?"
 decor = gets.chomp
 client_info[:decor] = decor
 
-puts "Does client like contemporary furniture? (y/n)"
+puts "Do you like contemporary furniture? (y/n)"
 contemporary = gets.chomp
 
 if contemporary == "y" || contemporary == "Y"
@@ -35,7 +35,7 @@ elsif contemporary == "n" || contemporary == "N"
 end
 client_info[:contemporary] = contemporary
 
-puts "Does client like classical furniture? (y/n)"
+puts "Do you like classical furniture? (y/n)"
 classical = gets.chomp
 
 if classical == "y" || classical == "Y"
