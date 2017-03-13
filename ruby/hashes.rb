@@ -9,7 +9,6 @@ client_info = {
 
 }
 
-
 puts "Enter client's name:"
 client_name = gets.chomp
 client_info[:name] = client_name
@@ -50,5 +49,10 @@ puts "How many rooms need a redesign?"
 redesign_rooms = gets.chomp.to_i
 client_info[:redesign] = redesign_rooms
 
+p client_info
+
+puts "Oh man, the interior designer has run out of #{decor} themed decor. What's another preferred decor theme you prefer?"
+decor = gets.chomp
+client_info[:decor] = decor
 
 p client_info
