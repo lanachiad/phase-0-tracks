@@ -1,4 +1,4 @@
-=begin
+# Release 0
 
 def youreold
   first = "Bob"
@@ -11,9 +11,11 @@ end
 
 youreold { |first, last| puts "Your name is #{first} #{last}!" }
 
-=end
 
-=begin
+# # # # # # # # # 
+
+
+# Release 1
 
 students = ["Bob", "Amy", "Mary", "Kim", "Tony", "Rob"]
 
@@ -44,8 +46,11 @@ p "After call"
 p students
 p pets
 
-=end
 
+# # # # # # # # # 
+
+
+# Release 2
 
 letters = ["a", "b", "c", "d", "e"]
 
