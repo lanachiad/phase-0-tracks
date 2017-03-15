@@ -13,6 +13,8 @@ youreold { |first, last| puts "Your name is #{first} #{last}!" }
 
 =end
 
+=begin
+
 students = ["Bob", "Amy", "Mary", "Kim", "Tony", "Rob"]
 
 pets = {cat: "kitten", dog: "puppy", deer: "doe", cow: "calf", goat: "kid", bear: "cub"}
@@ -41,3 +43,5 @@ end
 p "After call"
 p students
 p pets
+
+=end
