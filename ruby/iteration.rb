@@ -70,3 +70,6 @@ letters.reject { |letter| letter == "c" }
 
 numbers.reject { |spell, int| int > 2 }
 
+# A method that will remove items from a data structure until the condition in the block evaluates to false, then stops
+letters.drop_while { |letter| letter < "d" }
+
