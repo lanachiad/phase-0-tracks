@@ -45,3 +45,28 @@ p students
 p pets
 
 =end
+
+
+letters = ["a", "b", "c", "d", "e"]
+
+numbers = {one: 1, two: 2, three: 3, four: 4, five: 5}
+
+# A method that iterates through the items, deleting any that meet a certain condition
+p numbers
+numbers.delete(:one)
+p numbers
+
+p letters
+letters.delete("a")
+p letters
+
+# A method that filters a data structure for only items that do satisfy a certain condition
+letters.select { |letter| letter == "b" }
+
+numbers.select { |spell, int| int < 3 }
+
+# A different method that filters a data structure for only items satisfying a certain condition
+letters.reject { |letter| letter == "c" }
+
+numbers.reject { |spell, int| int > 2 }
+
