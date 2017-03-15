@@ -19,5 +19,15 @@ prefixed_menu = {
 			cheese: false
 		},
 		soup: 'tomato'
+	},
+	dinner: {
+		steak: {
+			quantity: 1,
+			prepared: 'medium-rare'
+		},
+		side: [
+			'mashed potatoes',
+			'steamed broccoli'
+		]
 	}
 }
