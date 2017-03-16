@@ -56,9 +56,9 @@ fib(input)
 # Take an array of unsorted integers
 # Compare the first and second numbers and see which is bigger
 # Put larger number after smaller number
-# Compare third+ number against the earlier numbers to see which is bigger
-# Put that number after smaller number
-# Repeat last two steps as needed
+# Iterate through the next integer and see if it is larger or smaller than the previously checked integers (so if we're checking the third integer (index 2), we'll check index0 and index1 integers)
+# Switch index position of integer according to how large or small it is compared to the previously checked integers
+# So I guess it's iterating through what's being iterated?
 
 def sort(array)
 	array.sort!
