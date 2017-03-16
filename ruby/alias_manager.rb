@@ -12,3 +12,16 @@ Iterate through new_name and replace every vowel to the next one and every conso
 Print new name
 
 =end
+
+
+
+puts "Enter your first name"
+first_name = gets.chomp
+
+puts "Enter your last name"
+last_name = gets.chomp
+
+swapped_full_name = last_name + " " + first_name
+
+
+
