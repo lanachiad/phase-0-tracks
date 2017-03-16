@@ -59,3 +59,8 @@
 # Compare third+ number against the earlier numbers to see which is bigger
 # Put that number after smaller number
 # Repeat last two steps as needed
+
+def sort(array)
+	array.sort!
+	p array
+end
