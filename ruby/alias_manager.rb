@@ -31,7 +31,26 @@ def next_vowel
 	vowels = "aeiou".split('')
 	first_array = first_name.split('')
 	
-	
+	first_array = first_array.map do |letter|
+		if vowels.include?(letter)
+			next_vowel = (vowels.index(letter)) + 1
+			if letter == "u"
+				p "a"
+			else
+				vowels[next_vowel]
+			end
+		else
+			letter
+		end
+	end
+	p first_array
 end
 
+
 next_vowel
+
+
+
+
+
+
