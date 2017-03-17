@@ -27,11 +27,11 @@ def next_vowel
 	last_name = gets.chomp
 
 	swapped_full_name = last_name + " " + first_name
+	swapped_full_name = swapped_full_name.split('')
 
 	vowels = "aeiou".split('')
-	first_array = first_name.split('')
 	
-	first_array = first_array.map do |letter|
+	swapped_full_name = swapped_full_name.map do |letter|
 		if vowels.include?(letter)
 			next_vowel = (vowels.index(letter)) + 1
 			if letter == "u"
@@ -43,11 +43,24 @@ def next_vowel
 			letter
 		end
 	end
-	p first_array
+
+	consonant = "bcdfghjklmnpqrstvwxyz".split('')
+
+	swapped_full_name = swapped_full_name.map do |letter|
+		if consonant.include?(letter)
+			next_consonant = (consonant.index(letter)) + 1
+			next_consonant
+		else
+			letter
+		end
+	end
+
+	p swapped_full_name.join('')
 end
 
 
 next_vowel
+
 
 
 
