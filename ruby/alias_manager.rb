@@ -14,14 +14,24 @@ Print new name
 =end
 
 
-
-puts "Enter your first name"
-first_name = gets.chomp
-
-puts "Enter your last name"
-last_name = gets.chomp
-
-swapped_full_name = last_name + " " + first_name
+# # # # # # # # # # # # # # # #
 
 
 
+
+def next_vowel
+	puts "Enter your first name"
+	first_name = gets.chomp
+
+	puts "Enter your last name"
+	last_name = gets.chomp
+
+	swapped_full_name = last_name + " " + first_name
+
+	vowels = "aeiou".split('')
+	first_array = first_name.split('')
+	
+	
+end
+
+next_vowel
