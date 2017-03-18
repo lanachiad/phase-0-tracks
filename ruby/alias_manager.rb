@@ -13,57 +13,48 @@ Print new name
 
 =end
 
+puts "Want to create a new alias? If not, type 'done'."
+answer = gets.chomp
 
-# # # # # # # # # # # # # # # #
+until answer == "done"
+	def alias_maker
+	  puts "Enter your first name"
+	  first_name = gets.chomp
 
+	  puts "Enter your last name"
+	  last_name = gets.chomp
 
+	  swapped_full_name = last_name + " " + first_name
+	  swapped_full_name = swapped_full_name.split('')
 
+	  vowels = "aeiou".split('')
+	  consonant = "bcdfghjklmnpqrstvwxyz".split('')
 
-def next_vowel
-	puts "Enter your first name"
-	first_name = gets.chomp
-
-	puts "Enter your last name"
-	last_name = gets.chomp
-
-	swapped_full_name = last_name + " " + first_name
-	swapped_full_name = swapped_full_name.split('')
-
-	vowels = "aeiou".split('')
-	
-	swapped_full_name = swapped_full_name.map do |letter|
-		if vowels.include?(letter)
-			next_vowel = (vowels.index(letter)) + 1
-			if letter == "u"
-				p "a"
-			else
-				vowels[next_vowel]
-			end
-		else
-			letter
-		end
+	  swapped_full_name = swapped_full_name.map do |letter|
+	    if vowels.include?(letter)
+	      next_vowel = (vowels.index(letter)) + 1
+	      if letter == "u"
+	        p "a"
+	      else
+	        vowels[next_vowel]
+	      end
+	    elsif consonant.include?(letter)
+	      next_consonant = (consonant.index(letter)) + 1
+	      if letter == "z"
+	        p "b"
+	      else
+	        consonant[next_consonant]
+	      end
+	  	else
+	  		p " "
+	    end
+	  end
+	  p swapped_full_name.join('')
 	end
 
-	consonant = "bcdfghjklmnpqrstvwxyz".split('')
+	alias_maker
 
-	swapped_full_name = swapped_full_name.map do |letter|
-		if consonant.include?(letter)
-			next_consonant = (consonant.index(letter)) + 1
-			next_consonant
-		else
-			letter
-		end
-	end
-
-	p swapped_full_name.join('')
+	puts "Do you want to create another alias? If not, type 'done'."
+	answer = gets.chomp
 end
-
-
-next_vowel
-
-
-
-
-
-
-
+	
