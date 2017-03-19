@@ -15,10 +15,13 @@ Print new name
 
 def alias_maker
 
+  all_names = []
+
   puts "Want to create a new alias? If not, type 'done'."
   answer = gets.chomp
 
   until answer == "done"
+
     puts "Enter your first name"
     first_name = gets.chomp.downcase
     puts "Enter your last name"
@@ -30,31 +33,37 @@ def alias_maker
     vowels = "aeiou".split('')
     consonant = "bcdfghjklmnpqrstvwxyz".split('')
 
-    swapped_full_name = swapped_full_name.map do |letter|
-      if vowels.include?(letter)
-        next_vowel = (vowels.index(letter)) + 1
-        if letter == "u"
+    swapped_full_name = swapped_full_name.map do |char|
+      if vowels.include?(char)
+        next_vowel = (vowels.index(char)) + 1
+        if char == "u"
           p "a"
         else
           vowels[next_vowel]
         end
-      elsif consonant.include?(letter)
-        next_consonant = (consonant.index(letter)) + 1
-        if letter == "z"
+      elsif consonant.include?(char)
+        next_consonant = (consonant.index(char)) + 1
+        if char == "z"
           p "b"
         else
           consonant[next_consonant]
         end
       else
-        p " "
+        p char
       end
     end
-    p swapped_full_name.join('')
 
+    swapped_full_name = swapped_full_name.join('')
+    p swapped_full_name
+
+    all_names << swapped_full_name
 
     puts "Do you want to create another alias? If not, type 'done'."
     answer = gets.chomp
   end
+
+  p all_names
+
 end
 
 alias_maker
