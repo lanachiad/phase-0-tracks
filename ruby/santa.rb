@@ -31,13 +31,13 @@ class Santa
 
 end
 
-santa = Santa.new("female", "Asian")
-puts "Santa is a #{santa.gender} and is #{santa.ethnicity}."
-p santa.gender
-santa.gender = "femme queer"
-p santa.gender
-p santa.celebrate_birthday
-p santa.get_mad_at("Dasher")
+# santa = Santa.new("female", "Asian")
+# puts "Santa is a #{santa.gender} and is #{santa.ethnicity}."
+# p santa.gender
+# santa.gender = "femme queer"
+# p santa.gender
+# p santa.celebrate_birthday
+# p santa.get_mad_at("Dasher")
 
 # santas = []
 # sample_gender = ["female", "male", "bigender", "gender fluid", "agender", "N/A"]
