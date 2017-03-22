@@ -1,15 +1,15 @@
 class Santa
 
-	attr_reader :age, :ethnicity
+  attr_reader :age, :ethnicity
 
-	attr_accessor :gender
+  attr_accessor :gender
 
   def initialize(gender, ethnicity)
     puts "Initializing Santa instance..."
     @gender = gender
     @ethnicity = ethnicity
-  	@age = rand(0..140)
-  	@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+    @age = rand(0..140)
+    @reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
   end
 
   def speak
@@ -28,6 +28,23 @@ class Santa
     @reindeer_ranking.delete(reindeer)
     @reindeer_ranking << reindeer
   end
+
+  # Long getter and setter declarations
+  #  def gender=(new_gender)
+  #    @gender = new_gender
+  #  end
+  #
+  #  def age
+  #    @age
+  #  end
+  #
+  #  def ethnicity
+  #    @ethnicity
+  #  end
+  # 
+  #  def gender
+  #    @gender
+  #  end
 
 end
 
@@ -64,7 +81,7 @@ p santa.get_mad_at("Dasher")
 
 count = 0
 while count < 100
-	diverse_santa = Santa.new("female", "Middle Eastern")
-	puts "This Santa is #{sample_gender.sample}, #{sample_ethnicity.sample}, and #{diverse_santa.age}"
-	count += 1
+  diverse_santa = Santa.new("female", "Middle Eastern")
+  puts "This Santa is #{sample_gender.sample}, #{sample_ethnicity.sample}, and #{diverse_santa.age}"
+  count += 1
 end
