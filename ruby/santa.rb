@@ -1,12 +1,11 @@
 class Santa
 
-  @reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
-  @age = 0
-
   def initialize(gender, ethnicity)
     puts "Initializing Santa instance..."
     @gender = gender
     @ethnicity = ethnicity
+  	@age = 0
+  	@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
   end
 
   def speak
@@ -17,39 +16,51 @@ class Santa
     puts "That was a good #{cookie_type}!"
   end
 
-  def celebrate_birthday(age)
-    age = #{age} + 1
-      end
+  def celebrate_birthday
+    @age = age + 1
+  end
 
   def get_mad_at(reindeer)
-  	@reindeer_ranking.delete(reindeer)
-  	@reindeer_ranking << reindeer
+    @reindeer_ranking.delete(reindeer)
+    @reindeer_ranking << reindeer
   end
 
   def gender=(new_gender)
-  	@gender = new_gender
+    @gender = new_gender
   end
 
   def age
-  	@age
+    @age
   end
 
   def ethnicity
-  	@ethnicity
+    @ethnicity
   end
-  
+
+  def gender
+  	@gender
+  end
+
 end
 
-santas = []
-sample_gender = ["female", "male", "bigender", "gender fluid", "agender", "N/A"]
-sample_ethnicity = ["white", "black", "Middle Eastern", "Asian", "Latino", "prefer not to say"]
+santa = Santa.new("female", "Asian")
+puts "Santa is a #{santa.gender} and is #{santa.ethnicity}."
+p santa.gender
+santa.gender = "femme queer"
+p santa.gender
+p santa.celebrate_birthday
+p santa.get_mad_at("Dasher")
 
-sample_gender.length.times do |i|
-  santas << Santa.new(sample_gender[i], sample_ethnicity[i])
-  puts "This Santa is #{sample_gender[i]} #{sample_ethnicity[i]}"
-end
+# santas = []
+# sample_gender = ["female", "male", "bigender", "gender fluid", "agender", "N/A"]
+# sample_ethnicity = ["white", "black", "Middle Eastern", "Asian", "Latino", "prefer not to say"]
 
-p santas
+# sample_gender.length.times do |i|
+#   santas << Santa.new(sample_gender[i], sample_ethnicity[i])
+#   puts "This Santa is #{sample_gender[i]} #{sample_ethnicity[i]}"
+# end
+
+# p santas
 
 # dirty_santa = Santa.new
 # dirty_santa.speak
