@@ -8,7 +8,7 @@ class Santa
     puts "Initializing Santa instance..."
     @gender = gender
     @ethnicity = ethnicity
-  	@age = 0
+  	@age = rand(0..140)
   	@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
   end
 
@@ -31,25 +31,40 @@ class Santa
 
 end
 
-# santa = Santa.new("female", "Asian")
-# puts "Santa is a #{santa.gender} and is #{santa.ethnicity}."
-# p santa.gender
-# santa.gender = "femme queer"
-# p santa.gender
-# p santa.celebrate_birthday
-# p santa.get_mad_at("Dasher")
 
-# santas = []
-# sample_gender = ["female", "male", "bigender", "gender fluid", "agender", "N/A"]
-# sample_ethnicity = ["white", "black", "Middle Eastern", "Asian", "Latino", "prefer not to say"]
+# Driver code for Release 0
 
-# sample_gender.length.times do |i|
-#   santas << Santa.new(sample_gender[i], sample_ethnicity[i])
-#   puts "This Santa is #{sample_gender[i]} #{sample_ethnicity[i]}"
-# end
+dirty_santa = Santa.new
+dirty_santa.speak
+dirty_santa.eat_milk_and_cookies("snickerdoodle")
 
-# p santas
 
-# dirty_santa = Santa.new
-# dirty_santa.speak
-# dirty_santa.eat_milk_and_cookies("snickerdoodle")
+# Release 1
+
+sample_gender = ["female", "male", "bigender", "gender fluid", "agender", "androsexual", "femme", "genderqueer", "intersex", "N/A"]
+sample_ethnicity = ["white", "black", "Middle Eastern", "Asian", "Latino", "Native American", "Pacific Islander", "North African", "prefer not to say"]
+
+sample_gender.length.times do |i|
+  puts "This Santa is #{sample_gender[i]} #{sample_ethnicity[i]}"
+end
+
+
+# Driver code for Release 3
+
+santa = Santa.new("female", "Asian")
+puts "Santa is a #{santa.gender} and is #{santa.ethnicity}."
+p santa.gender
+santa.gender = "femme queer"
+p santa.gender
+p santa.celebrate_birthday
+p santa.get_mad_at("Dasher")
+
+
+# Release 4
+
+count = 0
+while count < 100
+	diverse_santa = Santa.new("female", "Middle Eastern")
+	puts "This Santa is #{sample_gender.sample}, #{sample_ethnicity.sample}, and #{diverse_santa.age}"
+	count += 1
+end
