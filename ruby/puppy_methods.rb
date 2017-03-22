@@ -35,3 +35,23 @@ end
 # new_puppy.dog_years(2)
 # new_puppy.high_five
 
+class Kitten
+  
+  def initialize
+    puts "Initializing new kitten ..."
+  end
+  
+  def napping
+    puts "ZzZzZzZz"
+  end
+  
+  def mischief(thing)
+    puts "*plays with #{thing}*"
+  end 
+
+  def licks(number_licks)
+    clean = number_licks * 10
+    puts clean
+  end
+
+end
