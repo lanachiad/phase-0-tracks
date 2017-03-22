@@ -19,6 +19,6 @@ class Santa
 
 end
 
-dirty_santa = Santa.new
-dirty_santa.speak
-dirty_santa.eat_milk_and_cookies("snickerdoodle")
+# dirty_santa = Santa.new
+# dirty_santa.speak
+# dirty_santa.eat_milk_and_cookies("snickerdoodle")
