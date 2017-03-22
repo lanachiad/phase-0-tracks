@@ -8,24 +8,23 @@ class Puppy
   def speak(x)
     puts "Woof"*x
   end
-  
+
   def roll_over
     puts "*rolls over*"
   end
-  
+
   def dog_years(x)
     age = x * 7
     puts age
-	end
-  
+  end
+
   def high_five
     puts "paw five!"
-  end 
-  
+  end
+
   def initialize
     puts "Initializing new puppy instance ..."
   end
-  
 end
 
 # new_puppy = Puppy.new
@@ -35,23 +34,70 @@ end
 # new_puppy.dog_years(2)
 # new_puppy.high_five
 
+# # # # # # # # # # # # # # # # # # #
+
+=begin
+
+Create kitten class
+Create initialize method
+Define instance methods
+	- Napping
+    -input: none
+    -output:"ZzZzZzZz"
+	-Mischief
+    -input: thing as a string
+    -output: puts "*plays with #{thing}*"
+	-Licks
+		-input: number_licks as an integer
+		-output: integer output
+
+Create counter variable equal to 0
+Create empty kitten_array
+
+Create while loop on counter being less than 50
+	- Create new instance of Kitten
+	- Push new Kitten instance into kitten_array
+	- Increment counter value
+
+Iterate over each kitten_array value
+	- Call each instance method
+
+=end
+
+
 class Kitten
-  
+
   def initialize
     puts "Initializing new kitten ..."
   end
-  
+
   def napping
     puts "ZzZzZzZz"
   end
-  
+
   def mischief(thing)
     puts "*plays with #{thing}*"
-  end 
+  end
 
   def licks(number_licks)
     clean = number_licks * 10
     puts clean
   end
 
+end
+
+counter = 0
+
+kitten_array = []
+
+while counter < 50
+  kitten = Kitten.new
+  kitten_array.push(kitten)
+  counter +=1
+end
+
+kitten_array.each do |x|
+  x.napping
+  x.mischief("remote")
+  x.licks(5)
 end
