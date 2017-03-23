@@ -20,3 +20,11 @@ module Shout
 		words + "!!!" + " :)"
 	end
 end
+
+class Med_School_Applicant
+	include Shout
+end
+
+class Driver
+	include Shout
+end
