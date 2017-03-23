@@ -7,3 +7,6 @@ module Shout
 		words + "!!!" + " :)"
 	end
 end
+
+p Shout.yell_angrily("What on earth happened here")
+p Shout.yelling_happily("I'm so happy for you")
