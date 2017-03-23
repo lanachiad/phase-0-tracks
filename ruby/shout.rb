@@ -28,3 +28,9 @@ end
 class Driver
 	include Shout
 end
+
+student = Med_School_Applicant.new
+p student.yelling_happily("I got into my dream school")
+
+road_rager = Driver.new
+p road_rager.yell_angrily("Drive with the flow of traffic")
