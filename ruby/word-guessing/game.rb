@@ -58,6 +58,14 @@ class Word_Game
     end
   end
 
+  def result
+    if @blank_secret.include? ("_")
+      puts "Aw man, you didn't guess the word. Player 1 wins!"
+    else
+      puts "Woohoo! You got the word! Player 2 wins!"
+    end
+  end
+
 end
 
 game = Word_Game.new
