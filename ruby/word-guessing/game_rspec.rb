@@ -1,15 +1,19 @@
 require_relative 'game'
 
-describe Game do
+describe Word_Game do
 
-  let (:game) {Game.new}
+  let (:game) {Word_Game.new}
 
   it "Creates secret_word variable" do
-    expect(game.gets_word(@secret_word)).to eq @secret_word
+    expect(game.gets_word).to eq @secret_word
   end
 
   it "Player 1 guesses a letter in secret_word" do
-  	expect(game.guess_attempt(@guess)).to eq @guess
+  	expect(game.guess_attempt).to eq @guess
+  end
+
+  it "" do
+  	expect()
   end
 
 end
