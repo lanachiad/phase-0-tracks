@@ -1,20 +1,20 @@
 # Pseudocode
-=begin 
+
 
 + Create class called Game
-	- Read & write secret_word (attr_accessor)
+	# - Read & write secret_word (attr_accessor)
 	- Read word_blanks (attr_reader)
 	- Initialize with the parameter of secret_word
-		: @secret_word equal to secret_word
+		# : @secret_word equal to secret_word
 		: @word_blanks equal to word_blanks
-	- def secret_word
-		: Ask Player 1 to type in the secret_word
-		: @secret_word equal to secret_word as an array of strings with each letter
-	- def print_blanks
-		: Go through each character in @secret_word and each one with "_"
-		: @secret_word.each do |char|
-			char = "_ "
-		  end
+	# - def get_word
+		# : Ask Player 1 to type in the secret_word
+		# : @secret_word equal to secret_word as an array of strings with each letter
+	# - def print_blanks
+	# 	: Go through each character in @secret_word and each one with "_"
+	# 	: @secret_word.each do |char|
+	# 		char = "_ "
+	# 	  end
 	- def guess
 		+ Number of tries set to 0
 		+ Create guessed and set it to an empty array
@@ -47,5 +47,5 @@ end
 
 
 
-=end 
+
 
