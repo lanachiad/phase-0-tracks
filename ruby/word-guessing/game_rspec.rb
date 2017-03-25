@@ -22,4 +22,12 @@ describe Word_Game do
   	expect(game.print_blank)#to print "_ _ _ _"
   end
 
+  it "Updates the blank_secret array to include the correctly guessed letter in the right place" do
+  	expect(game.update_blank)#to print "t _ _ t"
+  end
+
+  it "Print success message" do
+  	expect(game.result)#to print "Woohoo! You got the word! Player 2 wins!"
+  end
+
 end
