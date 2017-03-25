@@ -1,10 +1,11 @@
 class Word_Game
 
-  attr_accessor :secret_word, :guess
+  attr_accessor :secret_word, :guess, :blank_secret
 
   def initialize
     @secret_word
     @guess
+    @blank_secret
   end
 
   def gets_word
@@ -19,7 +20,7 @@ class Word_Game
   end
 
   def loop_attempts
-  	print_blank
+    print_blank
     number_tries = @secret_word.length
     attempt_num = 0
     while attempt_num < number_tries
@@ -40,9 +41,19 @@ class Word_Game
   end
 
   def print_blank
-  	blank_secret = []
-  	blank_secret.fill("_", blank_secret.size, @secret_word.length)
-  	p blank_secret = blank_secret.join('')
+    @blank_secret = []
+    @blank_secret.fill("_", blank_secret.size, @secret_word.length)
+    p @blank_secret.join(' ')
+  end
+
+  def update_blank
+    position = secret_word.index(guess)
+    if position == nil
+      p @blank_secret.join(' ')
+    else
+      @blank_secret[position] = guess
+      p @blank_secret.join(' ')
+    end
   end
 
 end
@@ -50,3 +61,4 @@ end
 game = Word_Game.new
 game.gets_word
 game.loop_attempts
+game.result
