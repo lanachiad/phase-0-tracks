@@ -1,11 +1,13 @@
 class Word_Game
 
-  attr_accessor :secret_word, :guess, :blank_secret
+  attr_accessor :secret_word, :guess, :blank_secret, :prev_guesses, :attempt_num
 
   def initialize
     @secret_word
     @guess
     @blank_secret
+    @prev_guesses
+    @attempt_num
   end
 
   def gets_word
@@ -22,23 +24,30 @@ class Word_Game
   def loop_attempts
     print_blank
     number_tries = @secret_word.length
-    attempt_num = 0
+    @attempt_num = 0
+    @prev_guesses = []
     while attempt_num < number_tries
       guess_attempt
       compare_guess(@guess)
-      attempt_num += 1
+      @attempt_num += 1
     end
   end
 
   def compare_guess(guess)
+    puts "You guessed #{guess}"
     if @secret_word.include? guess
-      puts "You guessed #{guess}"
       puts "You guessed correctly!"
-      update_blank
     else
-      puts "You guessed #{guess}"
       puts "Womp womp! No #{guess} here. Try again."
-      update_blank
+    end
+    repeat_guess
+    update_blank
+  end
+
+  def repeat_guess
+    if prev_guesses.include? guess
+      puts "You've already guessed that!"
+      @attempt_num -= 1
     end
   end
 
@@ -52,9 +61,11 @@ class Word_Game
     position = secret_word.index(guess)
     if position == nil
       p @blank_secret.join(' ')
+      prev_guesses << @guess
     else
       @blank_secret[position] = guess
       p @blank_secret.join(' ')
+      prev_guesses << @guess
     end
   end
 
