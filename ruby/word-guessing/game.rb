@@ -11,7 +11,6 @@ class Word_Game
     puts "Welcome to the Word Guessing Game! It requires two players to play."
     puts "Player 1, type in a word you'd like Player 2 to have to guess."
     @secret_word = gets.chomp.split('')
-    puts "#{secret_word}"
   end
 
   def guess_attempt
@@ -20,6 +19,7 @@ class Word_Game
   end
 
   def loop_attempts
+  	print_blank
     number_tries = @secret_word.length
     attempt_num = 0
     while attempt_num < number_tries
@@ -37,6 +37,12 @@ class Word_Game
       puts "You guessed #{guess}"
       puts "Womp womp! No #{guess} here. Try again."
     end
+  end
+
+  def print_blank
+  	blank_secret = []
+  	blank_secret.fill("_", blank_secret.size, @secret_word.length)
+  	p blank_secret = blank_secret.join('')
   end
 
 end
