@@ -34,9 +34,11 @@ class Word_Game
     if @secret_word.include? guess
       puts "You guessed #{guess}"
       puts "You guessed correctly!"
+      update_blank
     else
       puts "You guessed #{guess}"
       puts "Womp womp! No #{guess} here. Try again."
+      update_blank
     end
   end
 
