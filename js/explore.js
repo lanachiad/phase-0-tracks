@@ -16,3 +16,9 @@ function reverse(string) {
 }
 
 reverse("hey there");
+
+if(1 == 1) {
+	reverse("oh you!");
+} else {
+	console.log("Pretty sure this won't print.");
+}
