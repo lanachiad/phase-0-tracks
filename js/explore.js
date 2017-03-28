@@ -6,7 +6,7 @@
 function reverse(string) {
 	var splitString = string.split('');
 	var reverseString = splitString.reverse();
-	var newString = reverseString.toString();
+	var newString = reverseString.join('');
 	console.log(newString);
 }
 
