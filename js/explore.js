@@ -4,4 +4,8 @@
 	// With Ruby, I know you can turn a string into an array, do .reverse on it, and then turn it back into a string. Can we do this in Javascript? Maybe the syntax will be different.
 
 function reverse(string) {
+	var splitString = string.split('');
+	console.log(splitString);
 }
+
+console.log(reverse("heythere"));
