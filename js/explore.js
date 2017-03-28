@@ -8,4 +8,4 @@ function reverse(string) {
 	console.log(splitString);
 }
 
-console.log(reverse("heythere"));
+reverse("heythere");
