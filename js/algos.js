@@ -9,6 +9,6 @@
 
 var longestString = function(array) {
 	for(i = 0; i < array.length; i++) {
-		
+		console.log(array[i].length);
 	}
 }
