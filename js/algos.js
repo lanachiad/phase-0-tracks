@@ -8,5 +8,7 @@
 			// If shorter, go to the next index
 
 var longestString = function(array) {
-
+	for(i = 0; i < array.length; i++) {
+		
+	}
 }
