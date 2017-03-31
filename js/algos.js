@@ -8,10 +8,10 @@
 			// If shorter, go to the next index
 
 var longestString = function(array) {
-	var longestWordLength = 0
+	var longestWordLength = 0;
 	for(i = 0; i < array.length; i++) {
 		if (array[i].length > longestWordLength) {
-			var longestWordLength = array[i].length
+			var longestWordLength = array[i].length;
 		}
 		console.log("The longest word has " + longestWordLength + " letters!");
 	}
