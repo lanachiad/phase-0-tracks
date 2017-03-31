@@ -8,9 +8,10 @@
 			// If shorter, go to the next index
 
 var longestString = function(array) {
-	longestWordLength = 0
+	var longestWordLength = 0
 	for(i = 0; i < array.length; i++) {
-		array[i].length;
+
+
 
 	}
 }
