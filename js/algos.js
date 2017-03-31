@@ -7,3 +7,6 @@
 			// If longer, save as a variable (max_length)
 			// If shorter, go to the next index
 
+function longestString(array) {
+	
+}
