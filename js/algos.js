@@ -12,3 +12,5 @@ var longestString = function(array) {
 		console.log(array[i].length);
 	}
 }
+
+longestString(["dog", "cat", "monkey"]);
