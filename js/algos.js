@@ -12,6 +12,7 @@ var longestString = function(array) {
 	for(i = 0; i < array.length; i++) {
 		if (array[i].length > longestWordLength) {
 			var longestWordLength = array[i].length;
+			var longestWord = array[i];
 		}
 	}
 	console.log("The longest word has " + longestWordLength + " letters!");
