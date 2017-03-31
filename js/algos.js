@@ -15,7 +15,7 @@ var longestString = function(array) {
 			var longestWord = array[i];
 		}
 	}
-	console.log("The longest word has " + longestWordLength + " letters!");
+	console.log("The longest word is " + longestWord + " and has " + longestWordLength + " letters!");
 }
 
 longestString(["dog", "cat", "monkey", "frog"]);
