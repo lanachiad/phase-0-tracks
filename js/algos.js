@@ -18,10 +18,6 @@ var longestString = function(array) {
 	console.log("The longest word is " + longestWord + " and has " + longestWordLength + " letters!");
 }
 
-longestString(["dog", "cat", "monkey", "frog"]);
-longestString(["apples", "kiwis", "strawberries", "bananas"]);
-
-
 // Release 1 Pseudocode 
 
 // Create a function that passes two objects as parameters
@@ -36,5 +32,8 @@ var compareTwo = function(obj1, obj2) {
 		}
 	}
 }
+
+longestString(["dog", "cat", "monkey", "frog"]);
+longestString(["apples", "kiwis", "strawberries", "bananas"]);
 
 compareTwo({"name": "Steve", "age": 42}, {"name": "Tony", "age": 42});
