@@ -22,3 +22,7 @@ longestString(["dog", "cat", "monkey", "frog"]);
 longestString(["apples", "kiwis", "strawberries", "bananas"]);
 
 
+// Release 1 Pseudocode 
+
+// Create a function that passes two objects as parameters
+	// Loop through one of the objects to see if the key and/or value matches the key and/or value of the second object
