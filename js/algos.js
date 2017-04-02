@@ -28,5 +28,7 @@ longestString(["apples", "kiwis", "strawberries", "bananas"]);
 	// Loop through one of the objects to see if the key and/or value matches the key and/or value of the second object
 
 var compareTwo = function(obj1, obj2) {
-	
+	for(i = 0; i < obj1.length; i++) {
+		
+	}
 }
