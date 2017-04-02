@@ -36,3 +36,5 @@ var compareTwo = function(obj1, obj2) {
 		}
 	}
 }
+
+compareTwo({"Robert", 42}, {"Tony", 42});
