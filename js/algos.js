@@ -28,8 +28,8 @@ longestString(["apples", "kiwis", "strawberries", "bananas"]);
 	// Loop through one of the objects to see if the key and/or value matches the key and/or value of the second object
 
 var compareTwo = function(obj1, obj2) {
-	for(i = 0; i < obj1.length; i++) {
-		if (obj1[i] == obj2[i]) {
+	for(i = 0; i < Object.keys(obj1).length; i++) {
+		if (obj1[i] === obj2[i]) {
 			console.log(true);
 		} else {
 			console.log(false);
@@ -37,4 +37,4 @@ var compareTwo = function(obj1, obj2) {
 	}
 }
 
-compareTwo({"Robert": 42}, {"Tony": 42});
+compareTwo({"name": "Steve", "age": 42}, {"name": "Tony", "age": 42});
