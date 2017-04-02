@@ -29,6 +29,10 @@ longestString(["apples", "kiwis", "strawberries", "bananas"]);
 
 var compareTwo = function(obj1, obj2) {
 	for(i = 0; i < obj1.length; i++) {
-		
+		if (obj1[i] == obj2[i]) {
+			console.log(true);
+		} else {
+			console.log(false);
+		}
 	}
 }
