@@ -33,7 +33,9 @@ var compareTwo = function(obj1, obj2) {
 	}
 }
 
+// Release 0 driver code
 longestString(["dog", "cat", "monkey", "frog"]);
 longestString(["apples", "kiwis", "strawberries", "bananas"]);
 
+// Release 1 driver code
 compareTwo({"name": "Steve", "age": 42}, {"name": "Tony", "age": 42});
