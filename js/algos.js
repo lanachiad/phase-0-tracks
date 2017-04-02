@@ -19,3 +19,6 @@ var longestString = function(array) {
 }
 
 longestString(["dog", "cat", "monkey", "frog"]);
+longestString(["apples", "kiwis", "strawberries", "bananas"]);
+
+
