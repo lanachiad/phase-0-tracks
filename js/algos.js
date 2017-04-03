@@ -65,3 +65,4 @@ compareTwo({"name": "Steve", "age": 42}, {"name": "Tony", "age": 42});
 
 // Release 2 driver code
 wordLength(3);
+wordLength(5);
