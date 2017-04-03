@@ -40,6 +40,9 @@ var compareTwo = function(obj1, obj2) {
 	// Create for loop that occurs the number of times as the integer the user inputs
 		// Print a random number between 1 through 26 as the index
 
+var wordLength = function(integer) {
+	
+}
 
 
 
