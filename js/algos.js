@@ -42,16 +42,18 @@ var compareTwo = function(obj1, obj2) {
 
 var wordLength = function(integer) {
 	var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]; 
-	var randomCalc = Math.floor(Math.random() * 25) + 1;
 	var output = "";
+	var words = [];
 	for (i = 0; i < integer; i++) {
-		for (i = 0; i < 10; i++) {
-			output += alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+		for (j = 0; j < integer; j++) {
+			var randomCalc = Math.floor(Math.random() * 25) + 1;
+			output += alphabet[randomCalc];
 		}
-		console.log(output);
+		words.push(output);
+		output = "";
 	}
+	console.log(words.join(" "));
 }
-
 
 
 // Release 0 driver code
@@ -62,4 +64,4 @@ longestString(["apples", "kiwis", "strawberries", "bananas"]);
 compareTwo({"name": "Steve", "age": 42}, {"name": "Tony", "age": 42});
 
 // Release 2 driver code
-wordLength(4);
+wordLength(3);
