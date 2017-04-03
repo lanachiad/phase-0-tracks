@@ -33,6 +33,16 @@ var compareTwo = function(obj1, obj2) {
 	}
 }
 
+// Release 2 Pseudocode
+
+//  Create an array of the alphabet
+//  Create a function that passes an integer as a parameter
+	// Create for loop that occurs the number of times as the integer the user inputs
+		// Print a random number between 1 through 26 as the index
+
+
+
+
 // Release 0 driver code
 longestString(["dog", "cat", "monkey", "frog"]);
 longestString(["apples", "kiwis", "strawberries", "bananas"]);
