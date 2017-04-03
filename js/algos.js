@@ -55,3 +55,6 @@ longestString(["apples", "kiwis", "strawberries", "bananas"]);
 
 // Release 1 driver code
 compareTwo({"name": "Steve", "age": 42}, {"name": "Tony", "age": 42});
+
+// Release 2 driver code
+wordLength(8);
