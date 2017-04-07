@@ -1,0 +1,161 @@
+1. Display the information in one table (either table is fine).
+
+sqlite> SELECT * FROM characters;
+1|Lucio|1|4
+2|Reinhardt|1|3
+3|Solder: 76|2|1
+4|Ana|2|4
+5|Zarya|2|3
+6|Genji|3|1
+7|Tracer|3|1
+8|Mercy|3|4
+9|Zenyatta|3|4
+10|D.Va|3|3
+11|Orisa|3|3
+12|Roadhog|3|3
+13|Winston|3|3
+14|Bastion|4|2
+15|Junkrat|4|2
+16|McCree|4|1
+17|Pharah|4|1
+18|Reaper|4|1
+19|Hanzo|5|2
+20|Mei|5|2
+21|Widowmaker|5|2
+22|Sombra|5|1
+23|Symmetra|5|4
+24|Torbjorn|6|2
+
+----------------
+
+2. Update an item that meets some condition (you can choose a condition that makes sense).
+
+sqlite> UPDATE characters SET role_id = 2 WHERE name = "Symmetra";
+
+----------------
+
+3. Display the information in both tables using one query.
+
+sqlite> SELECT * FROM characters, roles WHERE characters.role_id = roles.id;
+1|Lucio|1|4|4|Support
+2|Reinhardt|1|3|3|Tank
+3|Solder: 76|2|1|1|Offense
+4|Ana|2|4|4|Support
+5|Zarya|2|3|3|Tank
+6|Genji|3|1|1|Offense
+7|Tracer|3|1|1|Offense
+8|Mercy|3|4|4|Support
+9|Zenyatta|3|4|4|Support
+10|D.Va|3|3|3|Tank
+11|Orisa|3|3|3|Tank
+12|Roadhog|3|3|3|Tank
+13|Winston|3|3|3|Tank
+14|Bastion|4|2|2|Defense
+15|Junkrat|4|2|2|Defense
+16|McCree|4|1|1|Offense
+17|Pharah|4|1|1|Offense
+18|Reaper|4|1|1|Offense
+19|Hanzo|5|2|2|Defense
+20|Mei|5|2|2|Defense
+21|Widowmaker|5|2|2|Defense
+22|Sombra|5|1|1|Offense
+23|Symmetra|5|2|2|Defense
+
+
+----------------
+
+4. Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
+
+sqlite> SELECT characters.name, characters.tier, roles.role
+   ...> FROM characters
+   ...> JOIN roles ON characters.role_id = roles.id;
+Lucio|1|Support
+Reinhardt|1|Tank
+Solder: 76|2|Offense
+Ana|2|Support
+Zarya|2|Tank
+Genji|3|Offense
+Tracer|3|Offense
+Mercy|3|Support
+Zenyatta|3|Support
+D.Va|3|Tank
+Orisa|3|Tank
+Roadhog|3|Tank
+Winston|3|Tank
+Bastion|4|Defense
+Junkrat|4|Defense
+McCree|4|Offense
+Pharah|4|Offense
+Reaper|4|Offense
+Hanzo|5|Defense
+Mei|5|Defense
+Widowmaker|5|Defense
+Sombra|5|Offense
+Symmetra|5|Defense
+Torbjorn|6|Defense
+
+----------------
+
+5. Delete an item that meets some condition (you can choose a condition that makes sense).
+
+sqlite> DELETE FROM characters
+   ...> WHERE tier = 6;
+
+
+----------------
+
+Release 3: Joins
+
+sqlite> SELECT * FROM characters
+   ...> JOIN roles ON characters.role_id = roles.id;
+1|Lucio|1|4|4|Support
+2|Reinhardt|1|3|3|Tank
+3|Solder: 76|2|1|1|Offense
+4|Ana|2|4|4|Support
+5|Zarya|2|3|3|Tank
+6|Genji|3|1|1|Offense
+7|Tracer|3|1|1|Offense
+8|Mercy|3|4|4|Support
+9|Zenyatta|3|4|4|Support
+10|D.Va|3|3|3|Tank
+11|Orisa|3|3|3|Tank
+12|Roadhog|3|3|3|Tank
+13|Winston|3|3|3|Tank
+14|Bastion|4|2|2|Defense
+15|Junkrat|4|2|2|Defense
+16|McCree|4|1|1|Offense
+17|Pharah|4|1|1|Offense
+18|Reaper|4|1|1|Offense
+19|Hanzo|5|2|2|Defense
+20|Mei|5|2|2|Defense
+21|Widowmaker|5|2|2|Defense
+22|Sombra|5|1|1|Offense
+23|Symmetra|5|2|2|Defense
+24|Torbjorn|6|2|2|Defense
+
+
+sqlite> SELECT characters.name, characters.tier, characters.role_id FROM characters INNER JOIN roles ON characters.role_id = roles.id;
+Lucio|1|4
+Reinhardt|1|3
+Solder: 76|2|1
+Ana|2|4
+Zarya|2|3
+Genji|3|1
+Tracer|3|1
+Mercy|3|4
+Zenyatta|3|4
+D.Va|3|3
+Orisa|3|3
+Roadhog|3|3
+Winston|3|3
+Bastion|4|2
+Junkrat|4|2
+McCree|4|1
+Pharah|4|1
+Reaper|4|1
+Hanzo|5|2
+Mei|5|2
+Widowmaker|5|2
+Sombra|5|1
+Symmetra|5|2
+
