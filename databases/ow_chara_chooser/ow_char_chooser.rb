@@ -27,6 +27,8 @@ class Character_Chooser
 	end
 
 	def role_chooser
+		puts "Let's choose your new character based on the role they play in the game. Your options are Offense, Defense, Tank, and Support."
+		puts "Which role do you want to play?"
 	end
 
 	def gender_chooser
