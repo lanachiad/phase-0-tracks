@@ -97,6 +97,13 @@ class Character_Chooser
 		end
 	end
 
+	def print_male(db)
+		all_male = db.execute("SELECT characters.name, gender.name, roles.name, characters.tier, characters.description FROM characters JOIN gender ON characters.gender_id = gender.id JOIN roles ON characters.role_id = roles.id WHERE gender_id = 2;")
+		all_male.each do |name, gender, role, tier, description|
+			puts "#{name} is a #{gender} #{role} in the #{tier} tier. #{name}'s description is, '#{description}'"
+		end
+	end
+
 	# Other Options
 
 	def other_option
