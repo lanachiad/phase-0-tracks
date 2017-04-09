@@ -77,6 +77,17 @@ class Character_Chooser
 	def gender_chooser
 		puts "Let's choose your character based on their gender. After all, we all want to be the character we play! Your options are Female, Male, Robot-Female, and Robot-Male."
 		puts "Which gender do you want to play as?"
+		gender = gets.chomp.downcase
+
+		if gender == "female"
+			print_female(@db)
+		elsif gender == "male"
+			print_male(@db)
+		elsif gender == "robot-female"
+			print_robofemale(@db)
+		elsif gender == "robot-male"
+			print_robomale(@db)
+		end	
 	end
 
 	# Other Options
