@@ -46,6 +46,18 @@ class Character_Chooser
 		end
 	end
 
+	def print_offense
+	end
+
+	def print_defense
+	end
+
+	def print_tank
+	end
+
+	def print_support
+	end
+
 	# Gender Chooser
 
 	def gender_chooser
