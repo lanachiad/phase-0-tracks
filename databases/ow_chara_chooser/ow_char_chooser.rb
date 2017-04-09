@@ -6,6 +6,7 @@ db.results_as_hash = true
 class Character_Chooser
 
 	attr_accessor :answer
+	attr_reader :role
 
 	def initialize
 		@answer = answer
