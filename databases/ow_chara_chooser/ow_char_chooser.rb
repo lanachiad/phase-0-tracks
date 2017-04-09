@@ -130,7 +130,7 @@ class Character_Chooser
 		elsif answer == "fun"
 			fun_characters(@db)
 		elsif answer == "random"
-			random_character(@db)
+			random_characters(@db)
 		end
 	end
 
@@ -144,6 +144,14 @@ class Character_Chooser
 	def fun_characters(db)
 		fun_chars = db.execute("SELECT characters.name, gender.name, roles.name, characters.tier, characters.description FROM characters JOIN gender ON characters.gender_id = gender.id JOIN roles ON characters.role_id = roles.id WHERE characters.name IN ('D.Va', 'Bastion', 'Tracer', 'Hanzo', 'Mei', 'Lucio', 'Zenyatta', 'Solder: 76');")
 		fun_chars.each do |name, gender, role, tier, description|
+			puts "#{name} is a #{gender} #{role} in the #{tier} tier. #{name}'s description is, '#{description}'"
+		end
+	end
+
+	def random_characters(db)
+		rand_id = db.execute("SELECT characters.id FROM characters WHERE _ROWID_ >= (abs(random()) % (SELECT max(_ROWID_) FROM characters)) LIMIT 1;")
+		rand_chars = db.execute("SELECT characters.name, gender.name, roles.name, characters.tier, characters.description FROM characters JOIN gender ON characters.gender_id = gender.id JOIN roles ON characters.role_id = roles.id WHERE characters.id = ?", rand_id)
+		rand_chars.each do |name, gender, role, tier, description|
 			puts "#{name} is a #{gender} #{role} in the #{tier} tier. #{name}'s description is, '#{description}'"
 		end
 	end
