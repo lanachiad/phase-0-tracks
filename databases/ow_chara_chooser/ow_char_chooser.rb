@@ -47,7 +47,7 @@ class Character_Chooser
 	end
 
 	def print_offense
-		db.execute("SELECT characters.name, genders.name, roles.name, characters.tier, characters.description" FROM characters WHERE role_id = 1 JOIN genders ON characters.gender_id = genders.id JOIN roles ON characters.role_id = roles.id;)
+		db.execute("SELECT characters.name, genders.name, roles.name, characters.tier, characters.description FROM characters WHERE role_id = 1 JOIN genders ON characters.gender_id = genders.id JOIN roles ON characters.role_id = roles.id;")
 	end
 
 	def print_defense
