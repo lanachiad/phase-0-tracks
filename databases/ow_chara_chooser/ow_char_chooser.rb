@@ -38,7 +38,7 @@ class Character_Chooser
 		elsif role == "defense"
 			print_defense(@db)
 		elsif role == "tank"
-			print_tank
+			print_tank(@db)
 		elsif role == "support"
 			print_support
 		end
@@ -58,7 +58,11 @@ class Character_Chooser
 		end
 	end
 
-	def print_tank
+	def print_tank(db)
+		all_tank = db.execute("SELECT characters.name, gender.name, roles.name, characters.tier, characters.description FROM characters JOIN gender ON characters.gender_id = gender.id JOIN roles ON characters.role_id = roles.id WHERE role_id = 3;")
+		all_tank.each do |name, gender, role, tier, description|
+			puts "#{name} is a #{gender} #{role} in the #{tier}th tier. #{name}'s description is, '#{description}'"
+		end
 	end
 
 	def print_support
