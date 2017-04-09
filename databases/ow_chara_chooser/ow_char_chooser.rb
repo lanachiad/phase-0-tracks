@@ -75,6 +75,8 @@ class Character_Chooser
 	# Gender Chooser
 
 	def gender_chooser
+		puts "Let's choose your character based on their gender. After all, we all want to be the character we play! Your options are Female, Male, Robot-Female, and Robot-Male."
+		puts "Which gender do you want to play as?"
 	end
 
 	# Other Options
