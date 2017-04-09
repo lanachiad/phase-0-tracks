@@ -47,14 +47,14 @@ class Character_Chooser
 	def print_offense(db)
 		all_offense = db.execute("SELECT characters.name, gender.name, roles.name, characters.tier, characters.description FROM characters JOIN gender ON characters.gender_id = gender.id JOIN roles ON characters.role_id = roles.id WHERE role_id = 1;")
 		all_offense.each do |name, gender, role, tier, description|
-			puts "#{name} is a #{gender} #{role} in the #{tier}th tier. Character description is, '#{description}'"
+			puts "#{name} is a #{gender} #{role} in the #{tier}th tier. #{name}'s description is, '#{description}'"
 		end
 	end
 
 	def print_defense(db)
 		all_defense = db.execute("SELECT characters.name, gender.name, roles.name, characters.tier, characters.description FROM characters JOIN gender ON characters.gender_id = gender.id JOIN roles ON characters.role_id = roles.id WHERE role_id = 2;")
 		all_defense.each do |name, gender, role, tier, description|
-			puts "#{name} is a #{gender} #{role} in the #{tier}th tier. Character description is, '#{description}'"
+			puts "#{name} is a #{gender} #{role} in the #{tier}th tier. #{name}'s description is, '#{description}'"
 		end
 	end
 
