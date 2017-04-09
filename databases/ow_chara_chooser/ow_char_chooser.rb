@@ -133,6 +133,13 @@ class Character_Chooser
 			random_character(@db)
 		end
 	end
+
+	def top_characters(db)
+		top_tier = db.execute("SELECT characters.name, gender.name, roles.name, characters.tier, characters.description FROM characters JOIN gender ON characters.gender_id = gender.id JOIN roles ON characters.role_id = roles.id WHERE tier = 1;")
+		top_tier.each do |name, gender, role, tier, description|
+			puts "#{name} is a #{gender} #{role} in the #{tier} tier. #{name}'s description is, '#{description}'"
+		end
+	end
 end
 
 new_character = Character_Chooser.new 
