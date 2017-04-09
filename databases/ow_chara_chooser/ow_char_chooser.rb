@@ -1,5 +1,8 @@
 require 'sqlite3'
 
+db = SQLite3::Database.new("ow_char.db")
+db.results_as_hash = true
+
 class Character_Chooser
 
 	attr_accessor :answer
