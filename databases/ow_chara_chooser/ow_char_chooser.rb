@@ -124,6 +124,14 @@ class Character_Chooser
 		puts "Maybe you want to play the very best character. Maybe you just want to have fun. Either way, you've got options."
 		puts "If you want to play as top-tier characters, type 'top'; if you want to play as fun characters, type 'fun'. Or if you still don't know what character you want to play, type 'random'."
 		answer = gets.chomp.downcase
+
+		if answer == "top"
+			top_characters(@db)
+		elsif answer == "fun"
+			fun_characters(@db)
+		elsif answer == "random"
+			random_character(@db)
+		end
 	end
 end
 
