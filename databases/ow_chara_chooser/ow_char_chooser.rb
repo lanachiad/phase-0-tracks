@@ -1,14 +1,12 @@
 require 'sqlite3'
 
-db = SQLite3::Database.new("ow_char.db")
-db.results_as_hash = true
-
 class Character_Chooser
 
-	attr_accessor :answer
+	attr_accessor :answer, :db
 	attr_reader :role
 
 	def initialize
+		@db = SQLite3::Database.new("ow_char.db")
 		@answer = answer
 		@role = role
 		introduction
@@ -36,7 +34,7 @@ class Character_Chooser
 		role = gets.chomp.downcase
 
 		if role == "offense"
-			print_offense
+			print_offense(@db)
 		elsif role == "defense"
 			print_defense
 		elsif role == "tank"
@@ -46,8 +44,9 @@ class Character_Chooser
 		end
 	end
 
-	def print_offense
-		db.execute("SELECT characters.name, genders.name, roles.name, characters.tier, characters.description FROM characters WHERE role_id = 1 JOIN genders ON characters.gender_id = genders.id JOIN roles ON characters.role_id = roles.id;")
+	def print_offense(db)
+		db.execute("SELECT characters.name, gender.name, roles.name, characters.tier, characters.description FROM characters JOIN gender ON characters.gender_id = gender.id JOIN roles ON characters.role_id = roles.id WHERE role_id = 1;")
+		
 	end
 
 	def print_defense
