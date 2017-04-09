@@ -33,6 +33,16 @@ class Character_Chooser
 		puts "Let's choose your new character based on the role they play in the game. Your options are Offense, Defense, Tank, and Support."
 		puts "Which role do you want to play?"
 		role = gets.chomp.downcase
+
+		if role = "offense"
+			print_offense
+		elsif role = "defense"
+			print_defense
+		elsif role = "tank"
+			print_tank
+		elsif role = "support"
+			print_support
+		end
 	end
 
 	# Gender Chooser
