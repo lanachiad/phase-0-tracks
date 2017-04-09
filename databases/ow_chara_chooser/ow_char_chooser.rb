@@ -27,4 +27,7 @@ class Character_Chooser
 	def gender_chooser
 	end
 
+	def other_option
+	end
+
 end
