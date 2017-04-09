@@ -19,11 +19,11 @@ class Character_Chooser
 		puts "Do you want to choose based on role or gender? For more options, type 'other'."
 		answer = gets.chomp.downcase
 
-		if answer = "role"
+		if answer == "role"
 			role_chooser
-		elsif answer = "gender"
+		elsif answer == "gender"
 			gender_chooser
-		elsif answer = "other"
+		elsif answer == "other"
 			other_option
 		end	
 	end
@@ -35,19 +35,19 @@ class Character_Chooser
 		puts "Which role do you want to play?"
 		role = gets.chomp.downcase
 
-		if role = "offense"
+		if role == "offense"
 			print_offense
-		elsif role = "defense"
+		elsif role == "defense"
 			print_defense
-		elsif role = "tank"
+		elsif role == "tank"
 			print_tank
-		elsif role = "support"
+		elsif role == "support"
 			print_support
 		end
 	end
 
 	def print_offense
-		db.execute("SELECT characters.name, genders.name, roles.name, characters.tier, characters.description") FROM characters WHERE role_id = 1 JOIN genders ON characters.gender_id = genders.id JOIN roles ON characters.role_id = roles.id; 
+		db.execute("SELECT characters.name, genders.name, roles.name, characters.tier, characters.description") FROM characters WHERE role_id = 1 JOIN genders ON characters.gender_id = genders.id JOIN roles ON characters.role_id = roles.id;)
 	end
 
 	def print_defense
