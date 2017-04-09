@@ -68,5 +68,6 @@ class Character_Chooser
 
 	def other_option
 	end
-
 end
+
+new_character = Character_Chooser.new 
