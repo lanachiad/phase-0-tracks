@@ -10,6 +10,7 @@ class Character_Chooser
 
 	def initialize
 		@answer = answer
+		@role = role
 		introduction
 	end
 
