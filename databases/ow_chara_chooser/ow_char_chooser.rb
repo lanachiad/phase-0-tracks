@@ -121,6 +121,9 @@ class Character_Chooser
 	# Other Options
 
 	def other_option
+		puts "Maybe you want to play the very best character. Maybe you just want to have fun. Either way, you've got options."
+		puts "If you want to play as top-tier characters, type 'top'; if you want to play as fun characters, type 'fun'. Or if you still don't know what character you want to play, type 'random'."
+		answer = gets.chomp.downcase
 	end
 end
 
