@@ -1,3 +1,5 @@
+require 'sqlite3'
+
 class Character_Chooser
 
 	attr_accessor :answer
