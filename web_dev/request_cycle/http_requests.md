@@ -8,6 +8,11 @@
 
 2. What is the difference between a GET request and a POST request? When might each be used?
 
+GET-type requests have no additional effects if they are called more than once with the same input parameters. GET is used for viewing something without changing it.
+
+POST-type requests may have side effects. POST is used for changing something.
+
 
 3. Optional bonus: What is a cookie? How does it relate to HTTP requests?
 
+Cookies are small files stored on a user's computer. They are designed to hold a small amount of data specific to a client and website, accessible by either the web server or client computer. They allow the delivery of a page tailored to a particular user.
