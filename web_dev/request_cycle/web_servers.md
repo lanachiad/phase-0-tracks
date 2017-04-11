@@ -17,3 +17,5 @@ It's a virtual machine you can use to host data as an extension in running your 
 It can be less expensive to host your server on a VPS account rather than on a physical server. They are scalable to meet your demands. It can also come with tech support should you need help with set up and maintenance.
 
 3. Optional bonus question: Why is it considered a bad idea to run programs as the root user on a Linux system?
+
+When you run programs as the root user, you're bypassing a security model put in place by the Linux system to protect your program. For security purposes, it's best to run programs on a user level and use administrative tasts to the root user.
