@@ -12,5 +12,8 @@
 
 2. In your own words, what is a VPS (virtual private server)? What, according to your research, are the advantages of using a VPS?
 
+It's a virtual machine you can use to host data as an extension in running your program and making your program accessible to the public. 
+
+It can be less expensive to host your server on a VPS account rather than on a physical server. They are scalable to meet your demands. It can also come with tech support should you need help with set up and maintenance.
 
 3. Optional bonus question: Why is it considered a bad idea to run programs as the root user on a Linux system?
