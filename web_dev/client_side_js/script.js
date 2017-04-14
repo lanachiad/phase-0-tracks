@@ -9,6 +9,7 @@ function coolStyling() {
 	var list = document.getElementById("list");
 
 	body.style.backgroundColor = "red";
+	body.style.textAlign = "center";
 
 	photo.style.border = "3px dashed blue";
 
