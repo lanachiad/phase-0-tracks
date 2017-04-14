@@ -11,7 +11,7 @@ function coolStyling() {
 	body.style.backgroundColor = "darkgreen";
 	body.style.textAlign = "center";
 
-	photo.style.border = "3px dashed blue";
+	photo.style.border = "3px dashed yellow";
 
 	title.style.color = "purple";
 	title.style.fontFamily = "Helvetica, sans-serif";
