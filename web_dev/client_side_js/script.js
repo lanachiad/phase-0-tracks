@@ -26,9 +26,4 @@ function coolStyling() {
 
 coolStyling();
 
-
-// var photo = document.getElementsByTagName("img");
-// photo = photo[0];
-// photo.onclick = function() {
-// 	photo.css("border", "3px dotted red");
-// };
+var checkbox = document.getElementById("checkbox");
