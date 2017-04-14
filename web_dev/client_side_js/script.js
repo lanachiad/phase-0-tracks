@@ -1,10 +1,14 @@
 console.log("This script is linked!");
 
 function coolStyling() {
+	var body = document.getElementsByTagName("body");
+	body = body[0];
 	var photo = document.getElementById("image");
 	var title = document.getElementById("title");
 	var content = document.getElementById("content");
 	var list = document.getElementById("list");
+
+	body.style.backgroundColor = "red";
 
 	photo.style.border = "3px dashed blue";
 
