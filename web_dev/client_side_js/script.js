@@ -23,5 +23,3 @@ function coolStyling() {
 	list.style.fontFamily = "Helvetica, sans-serif";
 	list.style.listStyleType = "none";
 }
-
-coolStyling();
