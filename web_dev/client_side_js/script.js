@@ -2,8 +2,9 @@ console.log("This script is linked!");
 
 function coolStyling() {
 	var photo = document.getElementById("image");
+	var title = document.getElementById("title");
 	photo.style.border = "3px dashed blue";
-	document.style.backgroundColor = "red";
+
 }
 
 coolStyling();
