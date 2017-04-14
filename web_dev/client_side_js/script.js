@@ -22,4 +22,9 @@ function coolStyling() {
 	list.style.color = "orange";
 	list.style.fontFamily = "Helvetica, sans-serif";
 	list.style.listStyleType = "none";
+
+	var addText = document.createElement("h2");
+	var newText = document.createTextNode("It'S pArTy TiMe!");
+	addText.appendChild(newText);
+	body.appendChild(addText);
 }
