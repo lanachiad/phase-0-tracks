@@ -8,7 +8,7 @@ function coolStyling() {
 	var content = document.getElementById("content");
 	var list = document.getElementById("list");
 
-	body.style.backgroundColor = "red";
+	body.style.backgroundColor = "darkgreen";
 	body.style.textAlign = "center";
 
 	photo.style.border = "3px dashed blue";
