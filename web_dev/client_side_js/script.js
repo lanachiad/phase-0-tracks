@@ -7,10 +7,15 @@ function coolStyling() {
 	var list = document.getElementById("list");
 
 	photo.style.border = "3px dashed blue";
+
 	title.style.color = "purple";
 	title.style.fontFamily = "Helvetica, sans-serif";
+
 	content.style.color = "darkgreen";
 	content.style.fontFamily = "Helvetica, sans-serif";
+
+	list.style.color = "orange";
+	list.style.fontFamily = "Helvetica, sans-serif";
 }
 
 coolStyling();
