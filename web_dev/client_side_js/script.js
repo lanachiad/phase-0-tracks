@@ -4,10 +4,12 @@ function coolStyling() {
 	var photo = document.getElementById("image");
 	var title = document.getElementById("title");
 	var content = document.getElementById("content");
+	var list = document.getElementById("list");
 
 	photo.style.border = "3px dashed blue";
 	title.style.color = "purple";
 	title.style.fontFamily = "Helvetica, sans-serif";
+	content.style.color = "darkgreen";
 	content.style.fontFamily = "Helvetica, sans-serif";
 }
 
