@@ -3,6 +3,8 @@ console.log("This script is linked!");
 function coolStyling() {
 	var photo = document.getElementById("image");
 	var title = document.getElementById("title");
+	var content = document.getElementById("content");
+
 	photo.style.border = "3px dashed blue";
 	title.style.color = "purple";
 	title.style.fontFamily = "Helvetica";
