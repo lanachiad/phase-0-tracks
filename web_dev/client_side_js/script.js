@@ -21,6 +21,7 @@ function coolStyling() {
 
 	list.style.color = "orange";
 	list.style.fontFamily = "Helvetica, sans-serif";
+	list.style.listStyleType = "none";
 }
 
 coolStyling();
