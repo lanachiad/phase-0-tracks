@@ -16,7 +16,7 @@ function coolStyling() {
 	title.style.color = "lightblue";
 	title.style.fontFamily = "Helvetica, sans-serif";
 
-	content.style.color = "darkgreen";
+	content.style.color = "white";
 	content.style.fontFamily = "Helvetica, sans-serif";
 
 	list.style.color = "orange";
