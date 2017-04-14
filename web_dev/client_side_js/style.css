@@ -1,3 +1,8 @@
 #image {
 	width: 500px;
 }
+
+#about-checkbox {
+	color: pink;
+	display: inline;
+}
