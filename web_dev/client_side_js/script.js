@@ -7,7 +7,7 @@ function coolStyling() {
 
 	photo.style.border = "3px dashed blue";
 	title.style.color = "purple";
-	title.style.fontFamily = "Helvetica";
+	title.style.fontFamily = "Helvetica, sans-serif";
 	content.style.fontFamily = "Helvetica, sans-serif";
 }
 
