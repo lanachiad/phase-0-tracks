@@ -4,7 +4,8 @@ function coolStyling() {
 	var photo = document.getElementById("image");
 	var title = document.getElementById("title");
 	photo.style.border = "3px dashed blue";
-
+	title.style.color = "purple";
+	title.style.fontFamily = "Helvetica";
 }
 
 coolStyling();
