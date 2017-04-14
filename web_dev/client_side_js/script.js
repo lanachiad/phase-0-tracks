@@ -13,7 +13,7 @@ function coolStyling() {
 
 	photo.style.border = "3px dashed yellow";
 
-	title.style.color = "purple";
+	title.style.color = "lightblue";
 	title.style.fontFamily = "Helvetica, sans-serif";
 
 	content.style.color = "darkgreen";
