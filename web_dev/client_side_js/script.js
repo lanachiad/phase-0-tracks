@@ -25,5 +25,3 @@ function coolStyling() {
 }
 
 coolStyling();
-
-var checkbox = document.getElementById("checkbox");
