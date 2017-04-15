@@ -70,3 +70,14 @@ h1 {
 .hide-block {
 	display: none;
 }
+
+#quote3 img {
+	display: table;
+	float: none;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+#quote3 .quote-content {
+	float: none;
+}
