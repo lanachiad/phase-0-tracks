@@ -1,3 +1,4 @@
 $( "#quote1-button" ).click(function() {
-  alert( "Handler for .click() called." );
+  $("quote1").removeClass("hide-block");
+  $("quote1").addClass("show-block");
 });
