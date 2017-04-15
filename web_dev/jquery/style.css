@@ -14,6 +14,12 @@ h1 {
 	text-align: center;
 }
 
+#poopybutthole {
+	height: 200px;
+	position: absolute;
+	right: 10%;
+}
+
 #intro {
 	background-color: white;
 	border-radius: 4px;
