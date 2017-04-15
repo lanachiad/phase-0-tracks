@@ -39,3 +39,12 @@ h1 {
 	margin: 10px;
 	padding: 10px;
 }
+
+.show-block {
+	background-color: #FAEBD7;
+	border-radius: 4px;
+	display: block;
+	margin: 0 auto;
+	padding: 30px;
+	width: 60%;
+}
