@@ -43,8 +43,24 @@ h1 {
 .show-block {
 	background-color: #FAEBD7;
 	border-radius: 4px;
-	display: block;
+	display: table;
 	margin: 0 auto;
-	padding: 30px;
+	padding: 50px;
 	width: 60%;
+}
+
+.quote-image {
+	display: inline;
+	float: left;
+	height: 300px;
+}
+
+.quote-content {
+	display: inline;
+	float: right;
+	width: 75%;
+}
+
+.hide-block {
+	display: none;
 }
