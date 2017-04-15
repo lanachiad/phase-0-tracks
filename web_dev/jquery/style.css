@@ -82,6 +82,6 @@ h1 {
 	float: none;
 }
 
-#quote4 .quote-content {
+#quote4 .quote-content, #quote5 .quote-content {
 	width: 50%;
 }
