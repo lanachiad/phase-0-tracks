@@ -36,6 +36,7 @@ h1 {
 	border: 2px solid #148c69;
 	border-radius: 4px;
 	color: #148c69;
+	display: inline-block;
 	margin: 10px;
 	padding: 10px;
 }
