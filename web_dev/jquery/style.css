@@ -7,3 +7,13 @@ h1 {
 	font-size: 3.5em;
 	text-align: center;
 }
+
+#intro {
+	background-color: white;
+	border-radius: 4px;
+	display: block;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+	width: 60%;
+}
