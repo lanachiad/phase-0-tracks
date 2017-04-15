@@ -2,16 +2,21 @@ $( document ).ready(function() {
 	var checkVisibility = function() {
 		if ($("#quote1").hasClass("show-block")) {
 	  	$("quote1").removeClass("show-block");
+	  	$("quote1").addClass("hide-block");
 	  } else if ($("#quote2").hasClass("show-block")) {
 	  	$("quote2").removeClass("show-block");
+	  	$("quote2").addClass("hide-block");
 	  } else if ($("#quote3").hasClass("show-block")) {
 	  	$("quote3").removeClass("show-block");
+	  	$("quote3").addClass("hide-block");
 	  } else if ($("#quote4").hasClass("show-block")) {
 	  	$("quote4").removeClass("show-block");
+	  	$("quote4").addClass("hide-block");
 	  } else if ($("#quote5").hasClass("show-block")) {
 	  	$("quote5").removeClass("show-block");
+	  	$("quote5").addClass("hide-block");
 	  }
-	}
+	};
 
 	$( "#quote1-button" ).click(function() {
 	  checkVisibility();
