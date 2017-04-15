@@ -1,6 +1,8 @@
 $( document ).ready(function() {	
 	var checkVisibility = function() {
-		if ($("#quote2").hasClass("show-block")) {
+		if ($("#quote1").hasClass("show-block")) {
+	  	$("quote1").removeClass("show-block");
+	  } else if ($("#quote2").hasClass("show-block")) {
 	  	$("quote2").removeClass("show-block");
 	  } else if ($("#quote3").hasClass("show-block")) {
 	  	$("quote3").removeClass("show-block");
@@ -9,7 +11,6 @@ $( document ).ready(function() {
 	  } else if ($("#quote5").hasClass("show-block")) {
 	  	$("quote5").removeClass("show-block");
 	  }
-	  end
 	}
 
 	$( "#quote1-button" ).click(function() {
