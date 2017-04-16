@@ -53,3 +53,12 @@ end
 get '/contact' do
 	"1020 W. Peace St., Raleigh, NC, 27605"
 end
+
+get '/great_job/' do
+	name = params[:name]
+	if name
+		"Good job, #{params[:name]}!"
+	else
+		"Good job!"
+	end
+end
