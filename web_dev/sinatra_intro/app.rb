@@ -62,3 +62,10 @@ get '/great_job/' do
 		"Good job!"
 	end
 end
+
+get '/:num_1/plus/:num_2' do
+  num_1 = params[:num_1].to_i
+  num_2 = params[:num_2].to_i
+  answer = num_1 + num_2
+  "#{params[:num_1]} plus #{params[:num_2]} equals #{answer}."
+end
