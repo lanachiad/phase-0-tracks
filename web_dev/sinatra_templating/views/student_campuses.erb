@@ -4,12 +4,10 @@
 </head>
 <body>
   <h1>Students By Campuses</h1>
-  <p>Welcome to the directory of students organized by campuses.</p>
-  <h2>New York City</h2>
-  <ul>
-    <% @students.each do |student| %>
-      <li><%= student['name'] %>, <%= student['age'] %>, <%= student['campus'] %></li>
-    <% end %>
-  </ul>
+  <p>Welcome to the directory of students organized by campuses. Type in a campus abbreviation to search for your cohort mates.</p>
+  <form action="/students/campuses" method="POST">
+    <input type="text" name="campus" placeholder="Campus">
+    <button type="submit">Search</button>
+  </form>
 </body>
 </html>
