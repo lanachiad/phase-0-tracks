@@ -30,6 +30,10 @@ end
 # 9.6 
 
 get '/students/campuses' do
-	db.execute("SELECT * FROM students")
-	erb :students_campuses
+	@students = db.execute("SELECT * FROM students WHERE campus IN ('NYC');")
+	erb :student_campuses
+end
+
+post '/students/campuses' do
+  @students = db.execute("SELECT * FROM students WHERE campus = ?", [params['campus']])
 end
