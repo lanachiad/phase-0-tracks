@@ -1,0 +1,15 @@
+<html>
+<head>
+  <title>Students By Campuses</title>
+</head>
+<body>
+  <h1>Students By Campuses</h1>
+  <p>Welcome to the directory of students organized by campuses.</p>
+  <h2>New York City</h2>
+  <ul>
+    <% @students.each do |student| %>
+      <li><%= student['name'] %>, <%= student['age'] %>, <%= student['campus'] %></li>
+    <% end %>
+  </ul>
+</body>
+</html>
