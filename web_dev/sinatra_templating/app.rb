@@ -30,5 +30,6 @@ end
 # 9.6 
 
 get '/students/campuses' do
+	db.execute("SELECT * FROM students")
 	erb :students_campuses
 end
