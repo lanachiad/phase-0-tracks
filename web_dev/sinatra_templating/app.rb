@@ -27,5 +27,8 @@ end
 # # # # # # # # # # # # # # # #
 # # # # # # # # # # # # # # # #
 
-# 9.6 Release 0
+# 9.6 
 
+get '/students/campuses' do
+	erb :students_campuses
+end
