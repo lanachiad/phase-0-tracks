@@ -24,4 +24,8 @@ post '/students' do
   redirect '/'
 end
 
-# add static resources
+# # # # # # # # # # # # # # # #
+# # # # # # # # # # # # # # # #
+
+# 9.6 Release 0
+
